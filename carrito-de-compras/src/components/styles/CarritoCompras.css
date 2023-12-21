@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 95vh;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+  transform: scale(1.1);
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.counter {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: antiquewhite;
+  color: rgb(44, 44, 247);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.button__container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.addButton {
+  background-color: rgb(44, 44, 247);
+  border: none;
+}
+
+.addButton:hover {
+  background-color: rgb(76, 76, 243);
+}
+
+.rmvButton {
+  background-color: rgb(247, 44, 44);
+  border: none;
+}
+
+.rmvButton:hover {
+  background-color: rgb(243, 76, 76);
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .paragraph {
+    font-size: 1.2rem;
+  }
+
+  .counter {
+    font-size: 2.5rem;
+  }
+
+  .btn:hover {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+
+/* Aplicamos un poco de diseño responsivo */
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .counter {
+    font-size: 1.8rem;
+  }
+
+  .button__container {
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
