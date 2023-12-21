@@ -28,7 +28,7 @@ export const CarritoCompras = () => {
           Agregar al carrito
         </button>
         <button onClick={quitarDelCarrito} className="btn rmvButton">
-          Quitar del carrito
+          Eliminar del carrito
         </button>
       </div>
     </div>
